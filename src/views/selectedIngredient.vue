@@ -7,7 +7,7 @@
 
 
         <div class="content">
-            <div class="resultElement" v-for="item in allRecipes" v-bind:key="item.id" @click="selectRecipe(item)">
+            <div class="resultElement" v-for="item in allRecipes" v-bind:key="item.id">
                 <img class="img" v-bind:src="item.image" alt="">
                 <p>{{item.title}}</p>
             </div>
